@@ -7,14 +7,19 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Whisky.create([
-  {name: "Aberlour"},
-  {description: "Highland single malt"},
-  {origin: "Scotland"},
-  {taste: "Caramel and honey, the malt still evident and the sweet spices still linger."}
+  {
+  name: "Aberlour",
+  description: "Highland single malt",
+  origin: "Scotland",
+  taste: "Caramel and honey, the malt still evident and the sweet spices still linger."
+  }
 ])
 
 Review.create([
-  {name: "Harvey Spectre"},
-  {description: "Smooth and rich, this whisky is good if you dont want to spend to much money. But there are better options out there."},
-  {rating: 3}
+  {
+  name: "Harvey Spectre",
+  description: "Smooth and rich, this whisky is good if you dont want to spend to much money. But there are better options out there.",
+  rating: 3,
+  whisky_id: 1
+  }
   ])
