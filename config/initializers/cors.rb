@@ -1,7 +1,8 @@
-class WhiskyApi::Application
+class Whisky::Application
   config.middleware.insert_before 0,  "Rack::Cors", debug: true, logger: (-> { Rails.logger }) do
     allow do
       origins 'localhost:3000', '127.0.0.1:3000',
+        'project-react.bitballoon.com'
 
       resource '/cors',
         headers: :any,
