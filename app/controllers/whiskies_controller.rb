@@ -1,4 +1,5 @@
 class WhiskiesController < ApplicationController
+
     def index
       render json: {
         meta: {
@@ -11,7 +12,8 @@ class WhiskiesController < ApplicationController
 
     def show
       whisky = Whisky.find(params[:id])
-      render json: { whisky: whisky }
+      reviews = whisky.reviews
+      render json: { whisky: whisky, reviews: reviews}
     end
 
     def create
@@ -19,11 +21,12 @@ class WhiskiesController < ApplicationController
         render json: { whisky: whisky }
       else
         render json: {
-          message: "Could not create whisky",
+          message: "Whisky not created",
           errors: whisky.errors,
         }, status: :unprocessible_entity
       end
     end
+
 
     def update
       whisky = Whisky.find(params[:id])
@@ -32,7 +35,7 @@ class WhiskiesController < ApplicationController
         render json: { whisky: whisky }
       else
         render json: {
-          message: "Could not update whisky",
+          message: "Whisky not updated",
           errors: whisky.errors,
         }, status: :unprocessible_entity
       end
