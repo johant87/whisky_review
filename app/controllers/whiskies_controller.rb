@@ -1,19 +1,18 @@
 class WhiskiesController < ApplicationController
 
     def index
+      whiskies = Whisky.order(:name)
       render json: {
-        meta: {
-          count: Whisky.count,
-          page: 0
-        },
-        whiskies: Whisky.order(:name)
+        whiskies: whiskies.as_json({:include => :reviews, methods => :average_rating})
+
       }
     end
 
     def show
       whisky = Whisky.find(params[:id])
       reviews = whisky.reviews
-      render json: { whisky: whisky, reviews: reviews}
+      average_rating = whisky.average_rating
+      render json: { whisky: whisky, reviews: reviews, average_rating: average_rating}
     end
 
     def create
