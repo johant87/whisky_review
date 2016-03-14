@@ -3,7 +3,7 @@ class WhiskiesController < ApplicationController
     def index
       whiskies = Whisky.order(:name)
       render json: {
-        whiskies: whiskies.as_json({:include => :reviews, methods => :average_rating})
+        whiskies: whiskies.as_json({:include => :reviews, :methods => :average_rating})
 
       }
     end
