@@ -8,18 +8,45 @@
 
 Whisky.create([
   {
-  name: "Aberlour",
-  description: "Highland single malt",
+  name: "Chivas Regal",
+  description: "Blended Scotch",
   origin: "Scotland",
-  taste: "Caramel and honey, the malt still evident and the sweet spices still linger."
-  }
-])
-
-Review.create([
+  taste: "There's a creamy hit of barley malt, pepped up with a little allspice. Notes of ground walnut and caramel.",
+  photo: "http://johanvandentillaart.nl/whisky-img/chivas.jpg"
+},
   {
-  name: "Harvey Spectre",
-  description: "Smooth and rich, this whisky is good if you dont want to spend to much money. But there are better options out there.",
-  rating: 3,
-  whisky_id: 1
-  }
-  ])
+  name: "Balblair",
+  description: "Single malt Scotch",
+  origin: "Scotland",
+  taste: "The sweet treats from the nose calm down just a little on the palate, with a spicy flutter of cinnamon and oak balancing out the fresh fruit and butterscotch rather well.",
+  photo: "http://johanvandentillaart.nl/whisky-img/balblair.jpg"
+},
+  {
+  name: "Dalmore",
+  description: "Single malt Scotch",
+  origin: "Scotland",
+  taste: "Medium, lovely delivery. Zesty orange, Curaçao, chocolate. Winter spice, stem ginger in syrup. Hints of anise and a little hickory.",
+  photo: "http://johanvandentillaart.nl/whisky-img/dalmore.jpg"
+},
+  {
+  name: "Balvenie",
+  description: "Single malt Scotch",
+  origin: "Scotland",
+  taste: "Warm Acacia honey and green apples on the nose leading to warm winter spices, vanilla and honeysuckle on the palate. The finish is gloriously long with notes of vanilla and honey.",
+  photo: "http://johanvandentillaart.nl/whisky-img/balvenie.jpg"
+},
+  {
+  name: "Talisker",
+  description: "Single malt Scotch",
+  origin: "Scotland",
+  taste: "Full bodied with huge plumes of smoke and volcanic, peppery peat. Intense.",
+  photo: "http://johanvandentillaart.nl/whisky-img/talisker.jpg"
+},
+  {
+  name: "Monkey Shoulder",
+  description: "Blended Scotch",
+  origin: "Scotland",
+  taste: "Very malty, creamy delivery with a suggestion of berry fruit. Juicy toasted barley, cloves and butterscotch. Manuka honey, hot-buttered-toast and dried apricot develop.",
+  photo: "http://johanvandentillaart.nl/whisky-img/monkeyshoulder.jpg"
+}
+])
