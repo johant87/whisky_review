@@ -1,4 +1,6 @@
-Demo: http://vast-reaches-77135.herokuapp.com/whiskies/
+Backend JSON RESTful API
+
+Output: http://vast-reaches-77135.herokuapp.com/whiskies/
 
 Frameworks and programming languages used:
 Ruby(on rails), CORS, Puma.
